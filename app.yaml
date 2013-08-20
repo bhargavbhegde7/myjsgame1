@@ -1,0 +1,22 @@
+application: myjsgame1
+version: 1
+runtime: php
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /pages
+  static_dir: pages
+
+- url: /signup.php
+  script: signup.php
+
+- url: /start_page.php
+  script: start_page.php
+  
+- url: /
+  script: start_page.php
